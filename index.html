@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Player App - Jakub Włodarczyk</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div class="video-wrapper">
+        <div class="video-container">
+            <video id="video">
+                Video element not supported
+            </video>
+            <img id="poster" src="media/sample_poster.jpg" />
+            <div class="video-state">
+                <span>CURRENT STATE: </span><span id="current-state"></span>
+            </div>
+            <div class="user-controls">
+                <img alt="play" title="play" id="play-btn" src="media/play_btn.png" />
+                <img alt="pause" title="pause" id="pause-btn" src="media/pause_btn.png" />
+                <img alt="stop" title="stop" id="stop-btn" src="media/stop_btn.png" />
+                <img alt="exit fullscreen" title="exit fullscreen" id="exit-fullscreen" src="media/exit_fullscreen.png" />
+            </div>
+        </div>
+    </div>
+    <div class="loading-area">
+        <img src="media/loader.gif" />
+    </div>
+    <div class="extra-features">
+        <label>Repeat playlist
+            <input type="checkbox" name="repeat" id="repeat-functionality">
+        </label>
+        <label>Shuffle playlist
+            <input type="checkbox" name="shuffle" id="shuffle-functionality">
+        </label>
+        <label>Fullscreen
+            <input type="checkbox" name="fullscreen" id="full-screen">
+        </label>
+    </div>
+
+    <script src="app/staticElementsModule.js"></script>
+    <script src="app/techModule.js"></script>
+    <script src="app/playlistModule.js"></script>
+    <script src="app/stateModule.js"></script>
+    <script src="app/actionsModule.js"></script>
+    <script src="app/techModule.js"></script>
+    <script src="app/eventsModule.js"></script>
+    <script src="app/videoModule.js"></script>
+    <script>
+        videoModule.init();
+    </script>
+</body>
+</html>

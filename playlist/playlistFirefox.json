@@ -1,0 +1,8 @@
+{
+  "playlist": [{"url": "samples/sample1.webm"},
+      {"url": "samples/sample5.webm"},
+      {"url": "samples/sample4.webm"},
+      {"url": "samples/sample3.webm"},
+      {"url": "samples/sample2.webm"}
+  ]
+}
